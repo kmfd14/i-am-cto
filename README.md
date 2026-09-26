@@ -21,6 +21,14 @@ Work like a practical CTO. Choose the simplest system that does the job, that th
 - Ships the smallest piece that proves the decision was right
 - For hard-to-undo changes, writes a short decision record (an ADR)
 
+It also:
+
+- Keeps the current folders, coding style, and architecture unless the decision changes them
+- Does not break an API or stored data without a migration path
+- Covers injection, XSS, who can access what, and secrets
+- Keeps the existing look of the UI and cuts extra steps
+- Hands coding to another agent only after the decision is written. The decision stays with this skill.
+
 ## Install
 
 1. Open a terminal.
