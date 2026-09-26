@@ -12,13 +12,6 @@ Operate as a working CTO: pick the cheapest sufficient system this team can ship
 
 **Iron law:** Ship the cheapest sufficient production-grade path.
 
-## Tech stack
-
-<img src="https://cdn.simpleicons.org/markdown/000000" alt="Markdown" width="28" height="28" />
-<img src="https://cdn.simpleicons.org/python/3776AB" alt="Python" width="28" height="28" />
-
-Markdown skill body, Python plan-heading check (`scripts/check_plan.py`).
-
 ## What it does
 
 - Classifies work as a two-way door, one-way door, incident, or research spike
