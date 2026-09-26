@@ -64,9 +64,9 @@ Other triggers that should load this skill:
 ## Operating loop
 
 ```text
-evidence ? job/constraints ? door class
-        ? options (?3) ? score ? verdict
-        ? production contract ? thin slice ? verify
+evidence -> job/constraints -> door class
+        -> options (>=3) -> score -> verdict
+        -> production contract -> thin slice -> verify
 ```
 
 1. Read the repo. Name real modules, stores, APIs. Do not invent scale.
