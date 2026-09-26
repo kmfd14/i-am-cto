@@ -6,20 +6,20 @@
 [![Last commit](https://img.shields.io/github/last-commit/kmfd14/i-am-cto)](https://github.com/kmfd14/i-am-cto)
 
 > [!NOTE]
-> This is a decision method for architecture and technical strategy. It is not executive roleplay or model-routing theater.
+> This skill tells the agent how to choose an architecture. It does not pretend to be an executive.
 
 Work like a practical CTO. Choose the simplest system that does the job, that this team can put in production and fix if it breaks, and that you can undo if the choice was wrong. Be ready to explain why.
 
-**Iron law:** Ship the cheapest sufficient production-grade path.
+**Iron law:** Use the simplest production setup that still does the job.
 
 ## What it does
 
-- Classifies work as a two-way door, one-way door, incident, or research spike
-- Forces at least three options: postpone, smallest change, heavier change
-- Scores options on quality attributes that matter for this job
-- Writes a production contract: failure modes, SLIs, rollback, migration, on-call
-- Ships a thin slice that can prove the verdict
-- Requires a Nygard ADR for one-way doors
+- Sorts the change: easy to undo, hard to undo, an outage right now, or a short experiment
+- Compares at least three options: wait, smallest change, bigger change
+- Scores those options on what matters here, including how hard it is to run and to undo
+- Says how it fails, how you notice, how you roll back, and who is on call
+- Ships the smallest piece that proves the decision was right
+- For hard-to-undo changes, writes a short decision record (an ADR)
 
 ## Install
 
@@ -57,17 +57,17 @@ Other triggers that should load this skill:
 ## Operating loop
 
 ```text
-evidence -> job/constraints -> door class
-        -> options (>=3) -> score -> verdict
-        -> production contract -> thin slice -> verify
+read the repo -> state the job
+        -> easy or hard to undo -> compare options -> pick one
+        -> how to run and roll back -> smallest piece -> check it
 ```
 
-1. Read the repo. Name real modules, stores, APIs. Do not invent scale.
-2. State the job and hard constraints.
-3. Classify the door.
-4. List options and score the attributes that matter.
-5. Give one imperative verdict and a production contract.
-6. Define the thin slice and verify it.
+1. Read the repo. Name the real parts. Do not invent scale.
+2. Say the job and the hard limits (time, team, stack, budget).
+3. Say whether the change is easy or hard to undo.
+4. List options and score the ones that matter.
+5. Pick one decision and say how you will run and roll it back.
+6. Define the smallest shippable piece and check that it works.
 
 ## Repo map
 
