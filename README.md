@@ -8,7 +8,7 @@
 > [!NOTE]
 > This is a decision method for architecture and technical strategy. It is not executive roleplay or model-routing theater.
 
-Operate as a working CTO: pick the cheapest sufficient system this team can ship, run at 3am, reverse if wrong, and defend in a design review.
+Work like a practical CTO. Choose the simplest system that does the job, that this team can put in production and fix if it breaks, and that you can undo if the choice was wrong. Be ready to explain why.
 
 **Iron law:** Ship the cheapest sufficient production-grade path.
 
