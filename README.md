@@ -33,26 +33,26 @@ Markdown skill body, Python plan-heading check (`scripts/check_plan.py`).
 1. Open a terminal.
 2. Run:
 
-```bash
-npx skills add kmfd14/i-am-cto -g -y
+```ansi
+[38;2;224;122;95m[1m$[0m npx skills add [38;2;224;122;95mkmfd14/i-am-cto[0m [38;2;202;138;4m-g[0m [38;2;202;138;4m-y[0m
 ```
 
 3. Confirm the skill appears for your agent (Cursor, Claude Code, or similar).
 
 Local path (no GitHub clone):
 
-```bash
-npx skills add /path/to/i-am-cto -g -y
+```ansi
+[38;2;224;122;95m[1m$[0m npx skills add [38;2;224;122;95m/path/to/i-am-cto[0m [38;2;202;138;4m-g[0m [38;2;202;138;4m-y[0m
 ```
 
 ## Quick Start
 
 After install, ask the agent something that needs a real architecture call:
 
-```text
-Act as CTO. We need in-app and email notifications on comments.
+```ansi
+[38;2;224;122;95m[1mAct as CTO.[0m We need in-app and email notifications on comments.
 Stack is Next.js + Postgres, two engineers, three days.
-Someone suggested Kafka. Run the options table and give a verdict.
+Someone suggested Kafka. [38;2;202;138;4mRun the options table and give a verdict.[0m
 ```
 
 Other triggers that should load this skill:
@@ -63,10 +63,10 @@ Other triggers that should load this skill:
 
 ## Operating loop
 
-```text
-evidence → job/constraints → door class
-        → options (≥3) → score → verdict
-        → production contract → thin slice → verify
+```ansi
+evidence [38;2;224;122;95m→[0m job/constraints [38;2;224;122;95m→[0m [38;2;202;138;4mdoor class[0m
+        [38;2;224;122;95m→[0m options (≥3) [38;2;224;122;95m→[0m score [38;2;224;122;95m→[0m [38;2;202;138;4mverdict[0m
+        [38;2;224;122;95m→[0m production contract [38;2;224;122;95m→[0m thin slice [38;2;224;122;95m→[0m [38;2;202;138;4mverify[0m
 ```
 
 1. Read the repo. Name real modules, stores, APIs. Do not invent scale.
